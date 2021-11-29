@@ -1,5 +1,21 @@
 .fonctionnement{
+    display: flex;
+    flex-direction: column;
     padding: $padding-high;
     width: 90%;
     margin: auto;
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        &--card{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: $padding-small;
+            background-color: $color-grey2;
+            border-radius: 1rem;
+        }
+    }
 }

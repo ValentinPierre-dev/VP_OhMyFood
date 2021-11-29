@@ -81,9 +81,25 @@ button {
 }
 
 .fonctionnement {
+  display: flex;
+  flex-direction: column;
   padding: 1.6rem 0rem;
   width: 90%;
   margin: auto;
+}
+.fonctionnement__cards {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+.fonctionnement__cards--card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.3rem 0rem;
+  background-color: #F6F6F6;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
