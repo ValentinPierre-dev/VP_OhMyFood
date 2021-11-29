@@ -12,6 +12,11 @@ h1 {
   font-size: 1.6rem;
 }
 
+h2 {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+}
+
 p {
   font-family: "Roboto";
   font-size: 1.1rem;
@@ -73,6 +78,12 @@ button {
 .discover p {
   text-align: center;
   margin: 0.5rem 2rem;
+}
+
+.fonctionnement {
+  padding: 1.6rem 0rem;
+  width: 90%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
