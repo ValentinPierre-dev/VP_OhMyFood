@@ -18,6 +18,23 @@ p {
   font-weight: 400;
 }
 
+button {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.discover__btn {
+  padding: 1.3rem 0rem;
+  margin: 1.5rem 4rem;
+  border-style: none;
+  border-radius: 2rem;
+  color: #fff;
+  background: linear-gradient(164deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-box-shadow: -2px 7px 16px -5px rgba(0, 0, 0, 0.33);
+  box-shadow: -2px 7px 16px -5px rgba(0, 0, 0, 0.33);
+}
+
 .entete {
   display: flex;
   justify-content: center;

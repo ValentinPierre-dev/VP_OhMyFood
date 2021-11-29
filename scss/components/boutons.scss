@@ -1,0 +1,10 @@
+.discover__btn{
+    padding: $padding-small;
+    margin: 1.5rem 4rem;
+    border-style: none;
+    border-radius: 2rem;
+    color: $color-white;
+    background: linear-gradient(164deg, $color-secondary 0%, $color-primary 100%);
+    -webkit-box-shadow: -2px 7px 16px -5px rgba(0,0,0,0.33); 
+    box-shadow: -2px 7px 16px -5px rgba(0,0,0,0.33);
+}
