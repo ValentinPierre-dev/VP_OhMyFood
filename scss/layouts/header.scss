@@ -1,0 +1,8 @@
+.entete{
+    display: flex;
+    justify-content: center;
+    padding: $padding-small;
+    width: $max-body;
+    background-color: $color-white;
+    box-shadow: $shadow-header;
+}
