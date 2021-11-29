@@ -1,0 +1,19 @@
+{
+  "name": "valentinpierre_3_24112021",
+  "version": "1.0.0",
+  "description": "Formation Développeur d'application JavaScript React - Projet 3 - Dynamisez une page web avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValentinPierre-dev/ValentinPierre_3_24112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValentinPierre-dev/ValentinPierre_3_24112021/issues"
+  },
+  "homepage": "https://github.com/ValentinPierre-dev/ValentinPierre_3_24112021#readme"
+}
