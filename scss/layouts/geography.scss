@@ -1,0 +1,11 @@
+.geography{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    background-color: $color-grey1;
+    i{
+        font-size: 1.2rem;
+        margin-right: 15px;
+    }
+}
