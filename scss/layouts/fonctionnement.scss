@@ -5,17 +5,42 @@
     width: 90%;
     margin: auto;
     &__cards{
+        position: relative;
         display: flex;
         flex-direction: column;
-        width: 90%;
+        justify-content: space-between;
+        height: 300px;
+        width: 95%;
         margin: auto;
         &--card{
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding: $padding-small;
+            padding: 0.8rem;
             background-color: $color-grey2;
-            border-radius: 1rem;
+            border-radius: 1.5rem;
+            box-shadow: $shadow-regular;
         }
+        &--txt{
+            font-weight: 700;
+        }
+        &--nb{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-primary;
+            color: $color-white;
+            border-radius: 2rem;
+            width: 1.8rem;
+            height: 1.8rem;
+            left: -0.8rem;
+            font-size: 1rem;
+        }
+    }
+    i{
+        font-size: 1.6rem;
+        color: $color-grey3;
+        margin: 0rem 1rem;
     }
 }

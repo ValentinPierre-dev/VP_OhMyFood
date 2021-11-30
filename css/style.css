@@ -88,18 +88,43 @@ button {
   margin: auto;
 }
 .fonctionnement__cards {
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  justify-content: space-between;
+  height: 300px;
+  width: 95%;
   margin: auto;
 }
 .fonctionnement__cards--card {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1.3rem 0rem;
+  padding: 0.8rem;
   background-color: #F6F6F6;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: -2px 7px 16px -5px rgba(0, 0, 0, 0.33);
+}
+.fonctionnement__cards--txt {
+  font-weight: 700;
+}
+.fonctionnement__cards--nb {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  color: #fff;
+  border-radius: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  left: -0.8rem;
+  font-size: 1rem;
+}
+.fonctionnement i {
+  font-size: 1.6rem;
+  color: #7E7E7E;
+  margin: 0rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
