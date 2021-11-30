@@ -1,0 +1,24 @@
+.pied{
+    background-color: $color-grey4;
+    padding: 1.5rem;
+    &--logo{
+        color: white;
+        font-family: 'Shrikhand';
+        font-size: 1.2rem;
+        margin: 0 0 1.5rem 0;
+    }
+    &--text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+        font-size: 0.8rem;
+        i{
+            width: 2rem;
+
+        }
+        p{
+            margin: 0.3rem 0;
+        }
+    }
+}

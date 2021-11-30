@@ -185,4 +185,28 @@ a {
   margin: 0rem 1.5rem 0rem 1rem;
 }
 
+.pied {
+  background-color: #353535;
+  padding: 1.5rem;
+}
+.pied--logo {
+  color: white;
+  font-family: "Shrikhand";
+  font-size: 1.2rem;
+  margin: 0 0 1.5rem 0;
+}
+.pied--text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+}
+.pied--text i {
+  width: 2rem;
+}
+.pied--text p {
+  margin: 0.3rem 0;
+}
+
 /*# sourceMappingURL=style.css.map */
