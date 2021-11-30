@@ -4,6 +4,7 @@
     padding: $padding-high;
     width: 90%;
     margin: auto;
+    margin-bottom: 2rem;
     &__cards{
         position: relative;
         display: flex;
@@ -20,6 +21,14 @@
             background-color: $color-grey2;
             border-radius: 1.5rem;
             box-shadow: $shadow-regular;
+            &:hover{
+                background-color: lighten($color: $color-primary, $amount: 35);
+            }
+        }
+        i{
+            font-size: 1.6rem;
+            color: $color-grey3;
+            margin: 0rem 1rem;
         }
         &--txt{
             font-weight: 700;
@@ -37,10 +46,5 @@
             left: -0.8rem;
             font-size: 1rem;
         }
-    }
-    i{
-        font-size: 1.6rem;
-        color: $color-grey3;
-        margin: 0rem 1rem;
     }
 }
