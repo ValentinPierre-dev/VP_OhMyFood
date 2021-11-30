@@ -1,0 +1,44 @@
+.restaurants{
+    background-color: $color-grey2;
+    padding: $padding-high;
+    h2{
+        width: 90%;
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1.3rem;
+    }
+    &__cards{
+        margin-bottom: 2rem;
+        &--card{
+            width: 90%;
+            background-color: white;
+            margin: auto;
+            margin-top: 1.5rem;
+            padding-bottom: 1rem;
+            border-radius: 20px;
+            box-shadow: $shadow-regular;
+        }
+        img{
+            height: 160px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0px 0px;
+        }
+        &--body1{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0rem 1.5rem 0rem 1rem;
+            h3{
+                margin: 1rem 0rem 0.5rem 0rem;
+            }
+            i{
+                font-size: 1.5rem;
+            }
+        }
+        &--body2{
+            margin: 0rem 1.5rem 0rem 1rem;
+
+        }
+    }
+}
