@@ -51,12 +51,20 @@ a {
 }
 
 .entete {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 1.3rem 0rem;
   width: 100%;
   background-color: #fff;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+.entete__arrow {
+  position: absolute;
+  font-size: 1.3rem;
+  left: 2rem;
+  color: #353535;
 }
 
 .geography {

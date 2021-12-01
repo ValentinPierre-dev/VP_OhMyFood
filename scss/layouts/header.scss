@@ -1,8 +1,16 @@
 .entete{
+    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: $padding-small;
     width: $max-body;
     background-color: $color-white;
     box-shadow: $shadow-header;
+    &__arrow{
+        position: absolute;
+        font-size: 1.3rem;
+        left: 2rem;
+        color: $color-grey4;
+    }
 }
