@@ -1,0 +1,11 @@
+.illustration{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu{
+    padding: $padding-high;
+    border-radius: 2rem 2rem 0 0;
+    background-color: $color-grey2;
+}

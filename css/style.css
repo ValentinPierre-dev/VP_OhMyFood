@@ -204,6 +204,18 @@ a {
   margin: 0rem 1.5rem 0rem 1rem;
 }
 
+.illustration {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  padding: 1.6rem 0rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #F6F6F6;
+}
+
 .pied {
   background-color: #353535;
   padding: 1.5rem;
