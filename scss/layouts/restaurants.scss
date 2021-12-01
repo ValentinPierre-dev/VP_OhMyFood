@@ -10,6 +10,7 @@
     &__cards{
         margin-bottom: 2rem;
         &--card{
+            position: relative;
             width: 90%;
             background-color: white;
             margin: auto;
@@ -17,6 +18,16 @@
             padding-bottom: 1rem;
             border-radius: 20px;
             box-shadow: $shadow-regular;
+        }
+        &--new{
+            position: absolute;
+            right: 1rem;
+            padding: 0.5rem 0.8rem;
+            background-color: $color-tiertiary;
+            border-radius: 0.2rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: darken($color: $color-tiertiary, $amount: 35);
         }
         img{
             height: 160px;
