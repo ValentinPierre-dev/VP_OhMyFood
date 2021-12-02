@@ -47,14 +47,13 @@ a {
   color: black;
 }
 
-.discover__btn {
+.btn--gradient {
   padding: 1.3rem 0rem;
   margin: 1.5rem 4rem;
   border-style: none;
   border-radius: 2rem;
   color: #fff;
   background: linear-gradient(164deg, #FF79DA 0%, #9356DC 100%);
-  -webkit-box-shadow: -2px 7px 16px -5px rgba(0, 0, 0, 0.33);
   box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
 }
 
