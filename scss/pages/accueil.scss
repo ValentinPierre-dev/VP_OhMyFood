@@ -1,17 +1,18 @@
-// Css de la partie Géographie de la page d'accueil
+// Css de la partie Localisation de la page d'accueil
 
-.geography{
+.localisation{
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
     background-color: $color-grey1;
+    padding: 1rem;
     i{
         font-size: 1.2rem;
         margin-right: 15px;
     }
     p{
-        font-weight: 600;
+        font-weight: $font-bold;
     }
 }
 
@@ -21,15 +22,10 @@
     display: flex;
     flex-direction: column;
     background-color: $color-grey2;
-    padding: $padding-high;
+    padding: 1.6rem;
+    text-align: center;
     h1{
         font-family: 'Roboto';
-        text-align: center;
-        margin: 0.3rem 3rem;
-    }
-    p{
-        text-align: center;
-        margin: 0.5rem 1.5rem;
     }
 }
 
@@ -38,57 +34,14 @@
 .fonctionnement{
     display: flex;
     flex-direction: column;
-    padding: $padding-high;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 2rem;
-    &__cards{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 300px;
-        width: 95%;
-        margin: auto;
-        &--card{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 0.8rem;
-            background-color: $color-grey2;
-            border-radius: 1.5rem;
-            box-shadow: $shadow-regular;
-            &:hover{
-                background-color: lighten($color: $color-primary, $amount: 35);
-            }
-        }
-        i{
-            font-size: 1.6rem;
-            color: $color-grey3;
-            margin: 0rem 1rem;
-        }
-        &--txt{
-            font-weight: 700;
-        }
-        &--nb{
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $color-primary;
-            color: $color-white;
-            border-radius: 2rem;
-            width: 1.8rem;
-            height: 1.8rem;
-            left: -0.8rem;
-            font-size: 1rem;
-        }
-    }
+    padding: 2rem 1rem;
 }
 
 // Css de la liste des restaurants
 
 .restaurants{
+    display: flex;
+    flex-direction: column;
     background-color: $color-grey2;
     padding: 2rem 1rem;
 }

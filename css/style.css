@@ -15,21 +15,22 @@ h1 {
 h2 {
   font-family: "Roboto";
   font-size: 1.6rem;
+  font-weight: 700;
 }
 
 h3 {
   font-family: "Roboto";
-  font-weight: 800;
   font-size: 1.3rem;
-  margin: 0.4rem 0;
+  font-weight: 700;
+  margin: 0;
 }
 
 h4 {
   font-family: "Roboto";
   font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 0.3rem;
   text-transform: uppercase;
+  margin: 2.5rem 0 0.3rem 0;
 }
 
 p {
@@ -42,7 +43,7 @@ p {
 b {
   font-family: "Roboto";
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 button {
@@ -57,13 +58,14 @@ a {
 }
 
 .btn--gradient {
-  padding: 1.3rem 0rem;
-  margin: 1.5rem 4rem;
+  margin: 2rem 4rem;
+  padding: 1rem;
   border-style: none;
   border-radius: 2rem;
   color: #fff;
   background: linear-gradient(164deg, #FF79DA 0%, #9356DC 100%);
   box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 
 .underline {
@@ -89,75 +91,32 @@ a {
   color: #353535;
 }
 
-.geography {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: center;
-  background-color: #EAEAEA;
-}
-.geography i {
-  font-size: 1.2rem;
-  margin-right: 15px;
-}
-.geography p {
-  font-weight: 600;
-}
-
-.discover {
-  display: flex;
-  flex-direction: column;
-  background-color: #F6F6F6;
-  padding: 1.6rem 0rem;
-}
-.discover h1 {
-  font-family: "Roboto";
-  text-align: center;
-  margin: 0.3rem 3rem;
-}
-.discover p {
-  text-align: center;
-  margin: 0.5rem 1.5rem;
-}
-
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  padding: 1.6rem 0rem;
-  width: 90%;
-  margin: auto;
-  margin-bottom: 2rem;
-}
-.fonctionnement__cards {
+.step {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 300px;
-  width: 95%;
-  margin: auto;
+  margin: 1rem;
 }
-.fonctionnement__cards--card {
+.step__content {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0.8rem;
   background-color: #F6F6F6;
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
 }
-.fonctionnement__cards--card:hover {
-  background-color: #f2eafb;
-}
-.fonctionnement__cards i {
-  font-size: 1.6rem;
+.step__content i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
   color: #7E7E7E;
-  margin: 0rem 1rem;
+  width: 4rem;
+  height: 3.5rem;
 }
-.fonctionnement__cards--txt {
+.step__content--txt {
   font-weight: 700;
 }
-.fonctionnement__cards--nb {
+.step__nb {
   position: absolute;
   display: flex;
   align-items: center;
@@ -167,18 +126,14 @@ a {
   border-radius: 2rem;
   width: 1.8rem;
   height: 1.8rem;
+  top: 25%;
   left: -0.8rem;
   font-size: 1rem;
 }
 
-.restaurants {
-  background-color: #F6F6F6;
-  padding: 2rem 1rem;
-}
-
 .card {
   position: relative;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   background-color: white;
   border-radius: 1.5rem;
   box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
@@ -196,7 +151,7 @@ a {
   padding: 0.5rem 0.8rem;
   background-color: #99E2D0;
   border-radius: 0.2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #2c9c81;
 }
 .card__content {
@@ -240,6 +195,46 @@ a {
   margin: 0.3rem 0;
 }
 
+.localisation {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  background-color: #EAEAEA;
+  padding: 1rem;
+}
+.localisation i {
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+.localisation p {
+  font-weight: 700;
+}
+
+.discover {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  padding: 1.6rem;
+  text-align: center;
+}
+.discover h1 {
+  font-family: "Roboto";
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  padding: 2rem 1rem;
+}
+
 .illustration {
   height: 250px;
   width: 100%;
@@ -247,6 +242,8 @@ a {
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding: 2rem 1rem;
   border-radius: 3rem 3rem 0 0;

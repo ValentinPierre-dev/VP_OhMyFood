@@ -1,6 +1,6 @@
 .card{
     position: relative;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     background-color: white;
     border-radius: 1.5rem;
     box-shadow: $shadow-regular;
@@ -17,7 +17,7 @@
         padding: 0.5rem 0.8rem;
         background-color: $color-tiertiary;
         border-radius: 0.2rem;
-        font-weight: 600;
+        font-weight: $font-bold;
         color: darken($color: $color-tiertiary, $amount: 35);
     }
     &__content{

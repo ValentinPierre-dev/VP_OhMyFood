@@ -10,6 +10,7 @@ body{
     width: $max-body;
 }
 
+
 h1{
     font-family: 'Shrikhand';
     font-size: 1.6rem;
@@ -18,34 +19,35 @@ h1{
 h2{
     font-family: 'Roboto';
     font-size: 1.6rem;
+    font-weight: $font-bold;
 }
 
 h3{
     font-family: 'Roboto';
-    font-weight: 800;
     font-size: 1.3rem;
-    margin: 0.4rem 0;
+    font-weight: $font-bold;
+    margin: 0;
 }
 
 h4{
     font-family: 'Roboto';
     font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 0.3rem;
+    font-weight: $font-regular;
     text-transform: uppercase;
+    margin: 2.5rem 0 0.3rem 0;
 }
 
 p{
     font-family: 'Roboto';
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: $font-regular;
     margin: 0.5rem 0;
 }
 
 b{
     font-family: 'Roboto';
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: $font-regular;
 }
 
 button{

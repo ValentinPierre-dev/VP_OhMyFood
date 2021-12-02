@@ -1,11 +1,12 @@
 // Css des boutons du site
 
 .btn--gradient{
-    padding: $padding-small;
-    margin: 1.5rem 4rem;
+    margin: 2rem 4rem;
+    padding: 1rem;
     border-style: none;
     border-radius: $radius;
     color: $color-white;
     background: $color-gradient;
     box-shadow: $shadow-regular;
+    text-align: center;
 }

@@ -7,6 +7,8 @@
 }
 
 .menu{
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding: 2rem 1rem;
     border-radius: 3rem 3rem 0 0;
@@ -17,7 +19,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        font-weight: 400;
+        font-weight: $font-regular;
         i{
             font-size: 1.8rem;
         }
