@@ -4,17 +4,16 @@
     background-color: white;
     margin: auto;
     margin-top: 1.5rem;
-    padding-bottom: 1rem;
     border-radius: 20px;
     box-shadow: $shadow-regular;
     &--new{
         position: absolute;
         right: 1rem;
+        top: 0.5rem;
         padding: 0.5rem 0.8rem;
         background-color: $color-tiertiary;
         border-radius: 0.2rem;
         font-weight: 600;
-        font-size: 0.9rem;
         color: darken($color: $color-tiertiary, $amount: 35);
     }
     img{
@@ -23,21 +22,15 @@
         object-fit: cover;
         border-radius: 20px 20px 0px 0px;
     }
-    &--body1{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0rem 1.5rem 0rem 1rem;
-        h3{
-            margin: 1rem 0rem 0.5rem 0rem;
-        }
+    &--content{
+        position: relative;
+        padding: 1rem;
         i{
-            font-size: 1.5rem;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 1.8rem;
         }
-    }
-    &--body2{
-        margin: 0rem 1.5rem 0rem 1rem;
-    
     }
 }
 
