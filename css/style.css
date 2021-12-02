@@ -169,7 +169,8 @@ a {
 .restaurants__cards {
   margin-bottom: 2rem;
 }
-.restaurants__cards--card {
+
+.card__resto {
   position: relative;
   width: 90%;
   background-color: white;
@@ -179,7 +180,7 @@ a {
   border-radius: 20px;
   box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
 }
-.restaurants__cards--new {
+.card__resto--new {
   position: absolute;
   right: 1rem;
   padding: 0.5rem 0.8rem;
@@ -189,26 +190,76 @@ a {
   font-size: 0.9rem;
   color: #2c9c81;
 }
-.restaurants__cards img {
+.card__resto img {
   height: 160px;
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
-.restaurants__cards--body1 {
+.card__resto--body1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0rem 1.5rem 0rem 1rem;
 }
-.restaurants__cards--body1 h3 {
+.card__resto--body1 h3 {
   margin: 1rem 0rem 0.5rem 0rem;
 }
-.restaurants__cards--body1 i {
+.card__resto--body1 i {
   font-size: 1.5rem;
 }
-.restaurants__cards--body2 {
+.card__resto--body2 {
   margin: 0rem 1.5rem 0rem 1rem;
+}
+
+.card__menu {
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
+}
+.card__menu--title {
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin: 0.4rem 0;
+}
+.card__menu--content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.2rem 0;
+}
+.card__menu--content p {
+  margin: 0;
+  margin-top: 0.2;
+}
+.card__menu--content--price {
+  font-weight: 600;
+}
+
+.pied {
+  background-color: #353535;
+  padding: 1.5rem;
+}
+.pied--logo {
+  color: white;
+  font-family: "Shrikhand";
+  font-size: 1.2rem;
+  margin: 0 0 1.5rem 0;
+}
+.pied--text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+}
+.pied--text i {
+  width: 2rem;
+}
+.pied--text p {
+  margin: 0.3rem 0;
 }
 
 .illustration {
@@ -246,55 +297,6 @@ a {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
-}
-.plats__card {
-  background-color: white;
-  border-radius: 1rem;
-  margin-top: 1rem;
-  padding: 1rem;
-  box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
-}
-.plats__card--title {
-  font-weight: 800;
-  font-size: 1.3rem;
-  margin: 0.4rem 0;
-}
-.plats__card--content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0.2rem 0;
-}
-.plats__card--content p {
-  margin: 0;
-  margin-top: 0.2;
-}
-.plats__card--content--price {
-  font-weight: 600;
-}
-
-.pied {
-  background-color: #353535;
-  padding: 1.5rem;
-}
-.pied--logo {
-  color: white;
-  font-family: "Shrikhand";
-  font-size: 1.2rem;
-  margin: 0 0 1.5rem 0;
-}
-.pied--text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: white;
-  font-size: 0.8rem;
-}
-.pied--text i {
-  width: 2rem;
-}
-.pied--text p {
-  margin: 0.3rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
