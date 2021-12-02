@@ -91,6 +91,11 @@ a {
   position: relative;
   margin: 1rem;
 }
+@media screen and (min-width: 599px) {
+  .step {
+    width: 30%;
+  }
+}
 .step__content {
   display: flex;
   flex-direction: row;
