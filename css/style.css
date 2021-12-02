@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-}
-
 h1 {
   font-family: "Shrikhand";
   font-size: 1.6rem;
@@ -20,9 +16,9 @@ h2 {
 
 h3 {
   font-family: "Roboto";
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  margin: 0;
+  margin: 0.2rem 0;
 }
 
 h4 {
@@ -35,15 +31,15 @@ h4 {
 
 p {
   font-family: "Roboto";
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  margin: 0.5rem 0;
+  margin: 0.2rem 0;
 }
 
 b {
   font-family: "Roboto";
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 button {
@@ -79,8 +75,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.3rem 0rem;
-  width: 100%;
+  padding: 1rem;
   background-color: #fff;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.3);
 }
@@ -133,7 +128,7 @@ a {
 
 .card {
   position: relative;
-  margin: 0.5rem 0;
+  margin: 0.6rem 0;
   background-color: white;
   border-radius: 1.5rem;
   box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
@@ -186,7 +181,7 @@ a {
   flex-direction: row;
   align-items: center;
   color: white;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .pied--text i {
   width: 2rem;

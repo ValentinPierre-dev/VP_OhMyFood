@@ -5,8 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: $padding-small;
-    width: $max-body;
+    padding: 1rem;
     background-color: $color-white;
     box-shadow: $shadow-header;
     &__arrow{

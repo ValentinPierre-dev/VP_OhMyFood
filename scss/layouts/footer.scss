@@ -6,7 +6,7 @@
     &--logo{
         color: white;
         font-family: 'Shrikhand';
-        font-size: 1.2rem;
+        font-size: $size-regular;
         margin: 0 0 1.5rem 0;
     }
     &--text{
@@ -14,10 +14,9 @@
         flex-direction: row;
         align-items: center;
         color: white;
-        font-size: 0.8rem;
+        font-size: $size-small;
         i{
             width: 2rem;
-
         }
         p{
             margin: 0.3rem 0;

@@ -6,32 +6,28 @@
     box-sizing: border-box;
 }
 
-body{
-    width: $max-body;
-}
-
 
 h1{
     font-family: 'Shrikhand';
-    font-size: 1.6rem;
+    font-size: $size-big;
 }
 
 h2{
     font-family: 'Roboto';
-    font-size: 1.6rem;
+    font-size: $size-big;
     font-weight: $font-bold;
 }
 
 h3{
     font-family: 'Roboto';
-    font-size: 1.3rem;
+    font-size: $size-regular;
     font-weight: $font-bold;
-    margin: 0;
+    margin: 0.2rem 0;
 }
 
 h4{
     font-family: 'Roboto';
-    font-size: 1.2rem;
+    font-size: $size-regular;
     font-weight: $font-regular;
     text-transform: uppercase;
     margin: 2.5rem 0 0.3rem 0;
@@ -39,20 +35,20 @@ h4{
 
 p{
     font-family: 'Roboto';
-    font-size: 1.1rem;
+    font-size: $size-regular;
     font-weight: $font-regular;
-    margin: 0.5rem 0;
+    margin: 0.2rem 0;
 }
 
 b{
     font-family: 'Roboto';
-    font-size: 1.1rem;
-    font-weight: $font-regular;
+    font-size: $size-regular;
+    font-weight: $font-bold;
 }
 
 button{
     font-family: 'Roboto';
-    font-size: 1rem;
+    font-size: $size-small;
     font-weight: 400;
 }
 
