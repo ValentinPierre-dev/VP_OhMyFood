@@ -9,7 +9,7 @@
 
 h1{
     font-family: 'Shrikhand';
-    font-size: $size-big;
+    font-size: map-get($size, big);
     font-weight: $font-regular;
 }
 
@@ -50,7 +50,7 @@ b{
 button{
     font-family: 'Roboto';
     font-size: $size-small;
-    font-weight: 400;
+    font-weight: $font-regular;
 }
 
 a{

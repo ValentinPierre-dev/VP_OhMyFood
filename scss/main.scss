@@ -1,6 +1,7 @@
 // Css regroupant tous les partiels
 
 @import "./utils/variables.scss";
+@import "./utils/mixins.scss";
 @import "./base/body";
 @import "./components/boutons.scss";
 @import "./components/underline.scss";

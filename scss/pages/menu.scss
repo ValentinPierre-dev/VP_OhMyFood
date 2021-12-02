@@ -7,16 +7,14 @@
 }
 
 .menu{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     position: relative;
     padding: 2rem 3%;
     border-radius: 3rem 3rem 0 0;
     background-color: $color-grey2;
     margin-top: -50px;
     &__title{
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         align-items: center;
         justify-content: space-between;
         font-weight: $font-regular;

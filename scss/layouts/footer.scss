@@ -10,8 +10,7 @@
         margin: 0 0 1.5rem 0;
     }
     &--text{
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         align-items: center;
         color: white;
         font-size: $size-small;

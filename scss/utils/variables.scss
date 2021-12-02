@@ -23,3 +23,13 @@ $font-bold: 700;
 $size-small: 1rem;
 $size-regular: 1.2rem;
 $size-big: 1.6rem;
+
+$size: (
+    small: 1rem,
+    regular: 1.2rem,
+    big: 1.6rem
+);
+
+$breakpoints: (
+    desktop: 599px
+);

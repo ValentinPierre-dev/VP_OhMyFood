@@ -2,17 +2,14 @@
     position: relative;
     margin: 1rem;
     &__content{
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         align-items: center;
         padding: 0.8rem;
         background-color: $color-grey2;
         border-radius: 1.2rem;
         box-shadow: $shadow-regular;
         i{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
             font-size: 1.5rem;
             color: $color-grey3;
             width: 4rem;
@@ -25,9 +22,7 @@
     }
     &__nb{
         position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         background-color: $color-primary;
         color: $color-white;
         border-radius: 2rem;

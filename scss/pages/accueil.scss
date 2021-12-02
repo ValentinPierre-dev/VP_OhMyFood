@@ -1,8 +1,7 @@
 // Css de la partie Localisation de la page d'accueil
 
 .localisation{
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     align-items: baseline;
     justify-content: center;
     background-color: $color-grey1;
@@ -19,8 +18,7 @@
 // Css de la partie Découverte de l'outil
 
 .discover{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     background-color: $color-grey2;
     padding: 1.6rem;
     text-align: center;
@@ -37,15 +35,17 @@
 }
 
 .steps{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @include flex-row;
+        justify-content: space-between;
+    }
 }
 
 // Css de la liste des restaurants
 
 .restaurants{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     background-color: $color-grey2;
     padding: 2rem 3%;
 }

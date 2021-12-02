@@ -2,9 +2,7 @@
 
 .entete{
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     padding: 1rem;
     background-color: $color-white;
     box-shadow: $shadow-header;
