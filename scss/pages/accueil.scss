@@ -26,15 +26,19 @@
     text-align: center;
     h1{
         font-family: 'Roboto';
+        font-weight: $font-bold;
     }
 }
 
 // Css de la partie Fonctionnement de la page d'accueil
 
 .fonctionnement{
+    padding: 2rem 3%;
+}
+
+.steps{
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
 }
 
 // Css de la liste des restaurants
@@ -43,5 +47,5 @@
     display: flex;
     flex-direction: column;
     background-color: $color-grey2;
-    padding: 2rem 1rem;
+    padding: 2rem 3%;
 }
