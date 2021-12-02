@@ -47,11 +47,6 @@
     margin-top: 1rem;
     padding: 1rem;
     box-shadow: $shadow-regular;
-    &--title{
-        font-weight: 800;
-        font-size: 1.3rem;
-        margin: 0.4rem 0;
-    }
     &--content{
         display: flex;
         flex-direction: row;
@@ -60,9 +55,6 @@
         p{
             margin: 0;
             margin-top: 0.2;
-        }
-        &--price{
-            font-weight: 600;
         }
     }
 }
