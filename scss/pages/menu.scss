@@ -7,10 +7,8 @@
 }
 
 .menu{
-    display: flex;
-    flex-direction: column;
     position: relative;
-    padding: 1.5rem 1rem ;
+    padding: 2rem 1rem;
     border-radius: 3rem 3rem 0 0;
     background-color: $color-grey2;
     margin-top: -50px;
@@ -21,18 +19,7 @@
         justify-content: space-between;
         font-weight: 400;
         i{
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
     }
-    &--underline{
-        height: 4px;
-        width: 50px;
-        background-color: $color-tiertiary;
-    }
-}
-
-.plats{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
 }

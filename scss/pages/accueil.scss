@@ -1,3 +1,38 @@
+// Css de la partie Géographie de la page d'accueil
+
+.geography{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    background-color: $color-grey1;
+    i{
+        font-size: 1.2rem;
+        margin-right: 15px;
+    }
+    p{
+        font-weight: 600;
+    }
+}
+
+// Css de la partie Découverte de l'outil
+
+.discover{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-grey2;
+    padding: $padding-high;
+    h1{
+        font-family: 'Roboto';
+        text-align: center;
+        margin: 0.3rem 3rem;
+    }
+    p{
+        text-align: center;
+        margin: 0.5rem 1.5rem;
+    }
+}
+
 // Css de la partie Fonctionnement de la page d'accueil
 
 .fonctionnement{
@@ -49,4 +84,11 @@
             font-size: 1rem;
         }
     }
+}
+
+// Css de la liste des restaurants
+
+.restaurants{
+    background-color: $color-grey2;
+    padding: 2rem 1rem;
 }

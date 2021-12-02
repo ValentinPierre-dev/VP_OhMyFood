@@ -3,11 +3,9 @@
 @import "./utils/variables.scss";
 @import "./base/body";
 @import "./components/boutons.scss";
+@import "./components/underline.scss";
 @import "./layouts/header";
-@import "./layouts/geography.scss";
-@import "./layouts/discover.scss";
-@import "./layouts/fonctionnement.scss";
-@import "./layouts/restaurants.scss";
+@import "./pages/accueil.scss";
 @import "./layouts/cards.scss";
 @import "./layouts/footer.scss";
 @import "./pages/menu.scss";
