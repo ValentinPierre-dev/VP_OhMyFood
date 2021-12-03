@@ -8,7 +8,7 @@
     box-shadow: $shadow-header;
     &__arrow{
         position: absolute;
-        font-size: 1.3rem;
+        font-size: map-get($size, regular);
         left: 2rem;
         color: $color-grey4;
     }

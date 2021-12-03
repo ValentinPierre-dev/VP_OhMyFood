@@ -19,7 +19,7 @@
         justify-content: space-between;
         font-weight: $font-regular;
         i{
-            font-size: 1.8rem;
+            font-size: map-get($size, big);
             margin-right: 1.5rem;
         }
     }

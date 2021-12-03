@@ -2,18 +2,18 @@
 
 .pied{
     background-color: $color-grey4;
-    padding: 1.5rem;
+    padding: 3%;
     &--logo{
         color: white;
         font-family: 'Shrikhand';
-        font-size: $size-regular;
+        font-size: map-get($size, regular);
         margin: 0 0 1.5rem 0;
     }
     &--text{
         @include flex-row;
         align-items: center;
         color: white;
-        font-size: $size-small;
+        font-size: map-get($size, small);
         i{
             width: 2rem;
         }

@@ -15,20 +15,20 @@ h1{
 
 h2{
     font-family: 'Roboto';
-    font-size: $size-big;
+    font-size: map-get($size, big);
     font-weight: $font-bold;
 }
 
 h3{
     font-family: 'Roboto';
-    font-size: $size-regular;
+    font-size: map-get($size, regular);
     font-weight: $font-bold;
     margin: 0.2rem 0;
 }
 
 h4{
     font-family: 'Roboto';
-    font-size: $size-regular;
+    font-size: map-get($size, regular);
     font-weight: $font-regular;
     text-transform: uppercase;
     margin: 2.5rem 0 0.3rem 0;
@@ -36,20 +36,20 @@ h4{
 
 p{
     font-family: 'Roboto';
-    font-size: $size-regular;
+    font-size: map-get($size, regular);
     font-weight: $font-regular;
     margin: 0.2rem 0;
 }
 
 b{
     font-family: 'Roboto';
-    font-size: $size-regular;
+    font-size: map-get($size, regular);
     font-weight: $font-bold;
 }
 
 button{
     font-family: 'Roboto';
-    font-size: $size-small;
+    font-size: map-get($size, small);
     font-weight: $font-regular;
 }
 

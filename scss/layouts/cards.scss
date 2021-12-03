@@ -4,6 +4,9 @@
     background-color: white;
     border-radius: 1.5rem;
     box-shadow: $shadow-regular;
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        min-width: 24%;
+    }
     img{
         height: 160px;
         width: 100%;
@@ -27,7 +30,7 @@
             position: absolute;
             top: 30px;
             right: 30px;
-            font-size: 1.8rem;
+            font-size: map-get($size, big);
         }
         &--price{
             @include flex-row;
