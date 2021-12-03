@@ -140,7 +140,7 @@ a {
 }
 @media screen and (min-width: 599px) {
   .card {
-    min-width: 24%;
+    min-width: 32%;
   }
 }
 .card img {
@@ -282,6 +282,18 @@ a {
 .menu__title i {
   font-size: 1.6rem;
   margin-right: 1.5rem;
+}
+
+.plats {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 599px) {
+  .plats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .commander {

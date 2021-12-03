@@ -25,6 +25,14 @@
     }
 }
 
+.plats{
+    @include flex-column;
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @include flex-row;
+        justify-content: space-between;
+    }
+}
+
 .commander{
     background-color: $color-grey2;
     text-align: center;

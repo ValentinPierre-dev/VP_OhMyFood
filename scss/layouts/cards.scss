@@ -5,7 +5,7 @@
     border-radius: 1.5rem;
     box-shadow: $shadow-regular;
     @media screen and (min-width: map-get($breakpoints, desktop)){
-        min-width: 24%;
+        min-width: 32%;
     }
     img{
         height: 160px;
