@@ -49,6 +49,7 @@
     background-color: $color-grey2;
     padding: 2rem 3%;
     &__list{
+        @include flex-column;
         @media screen and (min-width: map-get($breakpoints, desktop)){
             @include flex-row;
             justify-content: space-between;
