@@ -18,7 +18,7 @@
 // Css de la partie Découverte de l'outil
 
 .discover{
-    @include flex-column;
+    //@include flex-column;
     background-color: $color-grey2;
     padding: 1.6rem;
     text-align: center;

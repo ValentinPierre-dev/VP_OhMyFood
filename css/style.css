@@ -55,14 +55,13 @@ a {
 }
 
 .btn--gradient {
-  margin: 2rem 4rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  margin: 2rem;
   border-style: none;
   border-radius: 2rem;
   color: #fff;
   background: linear-gradient(164deg, #FF79DA 0%, #9356DC 100%);
   box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
-  text-align: center;
 }
 
 .underline {
@@ -218,8 +217,6 @@ a {
 }
 
 .discover {
-  display: flex;
-  flex-direction: column;
   background-color: #F6F6F6;
   padding: 1.6rem;
   text-align: center;
@@ -285,6 +282,12 @@ a {
 .menu__title i {
   font-size: 1.6rem;
   margin-right: 1.5rem;
+}
+
+.commander {
+  background-color: #F6F6F6;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
