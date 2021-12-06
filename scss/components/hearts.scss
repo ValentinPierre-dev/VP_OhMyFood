@@ -1,0 +1,41 @@
+.heartsChanger{
+    position: absolute;
+    z-index: 2;
+    right: 12%;
+    top: 35%;
+    cursor: pointer;
+    &--heart{
+      position: absolute;
+      font-size: map-get($size, big);
+      transition: all 500ms ease;
+      
+      &.empty {
+        opacity: 1;
+      }
+      
+      &.full {
+          transform: scale(0);
+        //opacity: 0;
+        background: linear-gradient(#9356DC, #FF79DA);
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-stroke-color: transparent;
+        -webkit-text-stroke-color: transparent;
+      }
+      
+    }
+      
+      &:hover {
+        .heartsChanger--heart{
+          &.empty {
+        opacity: 0;
+      }
+      
+      &.full {
+        transform: scale(1);
+      }
+        }
+      }
+  }

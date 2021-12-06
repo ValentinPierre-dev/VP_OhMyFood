@@ -64,11 +64,46 @@ a {
   box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
+.btn--gradient:hover {
+  background: linear-gradient(164deg, #ff93e1 0%, #a16be0 100%);
+}
 
 .underline {
   height: 4px;
   width: 50px;
   background-color: #99E2D0;
+}
+
+.heartsChanger {
+  position: absolute;
+  z-index: 2;
+  right: 12%;
+  top: 35%;
+  cursor: pointer;
+}
+.heartsChanger--heart {
+  position: absolute;
+  font-size: 1.6rem;
+  transition: all 500ms ease;
+}
+.heartsChanger--heart.empty {
+  opacity: 1;
+}
+.heartsChanger--heart.full {
+  transform: scale(0);
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-stroke-color: transparent;
+  -webkit-text-stroke-color: transparent;
+}
+.heartsChanger:hover .heartsChanger--heart.empty {
+  opacity: 0;
+}
+.heartsChanger:hover .heartsChanger--heart.full {
+  transform: scale(1);
 }
 
 .entete {
@@ -122,6 +157,9 @@ a {
 .step__content:hover::after {
   opacity: 1;
 }
+.step__content:hover i {
+  color: #9356DC;
+}
 .step__content::after {
   content: "";
   position: absolute;
@@ -134,9 +172,6 @@ a {
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
-}
-.step__content::after i {
-  color: #9356DC;
 }
 .step__nb {
   position: absolute;
@@ -185,13 +220,6 @@ a {
 .card__content {
   position: relative;
   padding: 1rem;
-}
-.card__content i {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 1.6rem;
-  color: linear-gradient(164deg, #FF79DA 0%, #9356DC 100%);
 }
 .card__content--price {
   display: flex;

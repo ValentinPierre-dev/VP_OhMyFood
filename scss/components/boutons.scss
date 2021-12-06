@@ -9,4 +9,7 @@
     background: $color-gradient;
     box-shadow: $shadow-regular;
     cursor: pointer;
+    &:hover{
+        background: $color-gradient-lighten;
+    }
 }

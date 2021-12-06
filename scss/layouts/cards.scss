@@ -26,13 +26,6 @@
     &__content{
         position: relative;
         padding: 1rem;
-        i{
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            font-size: map-get($size, big);
-            color : $color-gradient;
-        }
         &--price{
             @include flex-row;
             justify-content: space-between;
