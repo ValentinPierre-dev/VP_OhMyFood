@@ -44,7 +44,7 @@
 
 // Css de la liste des restaurants
 
-.restaurants{
+#restaurants{
     @include flex-column;
     background-color: $color-grey2;
     padding: 2rem 3%;
