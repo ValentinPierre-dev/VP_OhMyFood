@@ -9,7 +9,10 @@
     background: $color-gradient;
     box-shadow: $shadow-regular;
     cursor: pointer;
+    transition: all 500ms ease;
     &:hover{
-        background: $color-gradient-lighten;
+        opacity: 0.80;
+        //background: $color-gradient-lighten;
+        box-shadow: $shadow-regular-hover;
     }
 }
