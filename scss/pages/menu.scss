@@ -18,10 +18,6 @@
         align-items: center;
         justify-content: space-between;
         font-weight: $font-regular;
-        i{
-            font-size: map-get($size, big);
-            margin-right: 1.5rem;
-        }
     }
 }
 

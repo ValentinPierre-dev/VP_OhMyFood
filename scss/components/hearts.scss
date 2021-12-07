@@ -1,8 +1,18 @@
+.posHearts--1{
+  position: absolute;
+  z-index: 2;
+  right: 12%;
+  top: 35%;
+}
+
+.posHearts--2{
+  position: absolute;
+  z-index: 2;
+  right: 50px;
+  top: 3.2rem;
+}
+
 .heartsChanger{
-    position: absolute;
-    z-index: 2;
-    right: 12%;
-    top: 35%;
     cursor: pointer;
     &--heart{
       position: absolute;

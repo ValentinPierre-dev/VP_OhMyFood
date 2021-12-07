@@ -82,11 +82,21 @@ a {
   background-color: #99E2D0;
 }
 
-.heartsChanger {
+.posHearts--1 {
   position: absolute;
   z-index: 2;
   right: 12%;
   top: 35%;
+}
+
+.posHearts--2 {
+  position: absolute;
+  z-index: 2;
+  right: 50px;
+  top: 3.2rem;
+}
+
+.heartsChanger {
   cursor: pointer;
 }
 .heartsChanger--heart {
@@ -351,6 +361,14 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+.card__content--price p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card__content--price b {
+  margin-left: 1rem;
+}
 
 .pied {
   background-color: #353535;
@@ -460,10 +478,6 @@ a {
   align-items: center;
   justify-content: space-between;
   font-weight: 400;
-}
-.menu__title i {
-  font-size: 1.6rem;
-  margin-right: 1.5rem;
 }
 
 .plats {
