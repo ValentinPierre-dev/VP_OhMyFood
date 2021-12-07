@@ -323,7 +323,7 @@ a {
   font-size: 1rem;
 }
 
-.card {
+.cardRestaurant {
   position: relative;
   margin: 0.6rem 0;
   background-color: white;
@@ -331,17 +331,17 @@ a {
   box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 599px) {
-  .card {
+  .cardRestaurant {
     min-width: 32%;
   }
 }
-.card img {
+.cardRestaurant img {
   height: 160px;
   width: 100%;
   object-fit: cover;
   border-radius: 1.5rem 1.5rem 0px 0px;
 }
-.card__new {
+.cardRestaurant__new {
   position: absolute;
   right: 1rem;
   top: 0.5rem;
@@ -351,22 +351,45 @@ a {
   font-weight: 700;
   color: #2c9c81;
 }
-.card__content {
+.cardRestaurant__content {
   position: relative;
   padding: 1rem;
 }
-.card__content--price {
+.cardRestaurant__content--price {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.card__content--price p {
+
+.cardMenu {
+  position: relative;
+  margin: 0.6rem 0;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: -2px 5px 16px -5px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 599px) {
+  .cardMenu {
+    min-width: 32%;
+  }
+}
+.cardMenu__content {
+  position: relative;
+  padding: 1rem;
+}
+.cardMenu__content--price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardMenu__content--price p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.card__content--price b {
+.cardMenu__content--price b {
   margin-left: 1rem;
 }
 

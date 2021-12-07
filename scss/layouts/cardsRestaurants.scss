@@ -1,0 +1,35 @@
+.cardRestaurant{
+    position: relative;
+    margin: 0.6rem 0;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: $shadow-regular;
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        min-width: 32%;
+    }
+    img{
+        height: 160px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1.5rem 1.5rem 0px 0px;
+    }
+    &__new{
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+        padding: 0.5rem 0.8rem;
+        background-color: $color-tiertiary;
+        border-radius: 0.2rem;
+        font-weight: $font-bold;
+        color: darken($color: $color-tiertiary, $amount: 35);
+    }
+    &__content{
+        position: relative;
+        padding: 1rem;
+        &--price{
+            @include flex-row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
