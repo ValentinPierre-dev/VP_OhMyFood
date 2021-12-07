@@ -1,0 +1,105 @@
+.container{
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    background-color: $color-grey2;
+    z-index: 20;
+    animation: fade 2000ms forwards linear;
+    animation-delay: 3000ms;
+    img{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.loading-content {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: $color-grey2;
+    box-shadow:  10px 10px 20px #cacaca,
+               -10px -10px 20px #f6f6f6;
+    &__center-part {
+      position: relative;
+      top: 50%;
+      z-index: 999;
+      height: 160px;
+      width: 160px;
+      transform: translateY(-50%);
+      margin-left: 20px;
+      border-radius: 100%;
+      background: #f8f8f8;
+      box-shadow: inset 5px 5px 20px #cfcfcf,
+                inset -5px -5px 20px #fdfdfd;
+    }
+
+
+    @for $i from 1 through $num-bars {
+        &__loader--#{$i} {
+            position: absolute;
+            left: 92.5px; /* (width of loading-content / 2) - (width of content__loader / 2) */
+            top: 0;
+            height: 100%;
+            width: 20px;
+            animation: spin $anim-dur infinite cubic-bezier(.69,.01,.05,1);
+            animation-delay: $anim-delay * $i;
+        }
+
+    }
+    &__loader-content--1 {
+        position: absolute;
+        height: 20px; // loading-content - loading-content__center-part
+        width: 100%;
+        border-radius: 2rem;
+        background-color: $color-primary;
+        box-shadow: 0 0 10px 1px $color-primary;
+      }
+    &__loader-content--2 {
+        position: absolute;
+        height: 20px; // loading-content - loading-content__center-part
+        width: 100%;
+        border-radius: 2rem;
+        background-color: $color-secondary;
+        box-shadow: 0 0 10px 1px $color-secondary;
+    }
+    &__loader-content--3 {
+        position: absolute;
+        height: 20px; // loading-content - loading-content__center-part
+        width: 100%;
+        border-radius: 2rem;
+        background-color: $color-tiertiary;
+        box-shadow: 0 0 10px 1px $color-tiertiary;
+    }
+}
+    
+    /* Spin endless */
+    @keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes fade{
+        0% {
+            opacity: 1;
+        }
+
+        50%{
+            opacity: 0;
+        }
+        100% {
+            z-index: -20;
+        }
+    }
+  

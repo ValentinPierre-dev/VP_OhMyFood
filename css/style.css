@@ -3,6 +3,12 @@
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 h1 {
   font-family: "Shrikhand";
   font-size: 1.6rem;
@@ -108,6 +114,122 @@ a {
   transform: scale(1);
 }
 
+.container {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background-color: #F6F6F6;
+  z-index: 20;
+  animation: fade 2000ms forwards linear;
+  animation-delay: 3000ms;
+}
+.container img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-content {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  margin: auto;
+  overflow: hidden;
+  background: #F6F6F6;
+  box-shadow: 10px 10px 20px #cacaca, -10px -10px 20px #f6f6f6;
+}
+.loading-content__center-part {
+  position: relative;
+  top: 50%;
+  z-index: 999;
+  height: 160px;
+  width: 160px;
+  transform: translateY(-50%);
+  margin-left: 20px;
+  border-radius: 100%;
+  background: #f8f8f8;
+  box-shadow: inset 5px 5px 20px #cfcfcf, inset -5px -5px 20px #fdfdfd;
+}
+.loading-content__loader--1 {
+  position: absolute;
+  left: 92.5px;
+  /* (width of loading-content / 2) - (width of content__loader / 2) */
+  top: 0;
+  height: 100%;
+  width: 20px;
+  animation: spin 2000ms infinite cubic-bezier(0.69, 0.01, 0.05, 1);
+  animation-delay: 300ms;
+}
+.loading-content__loader--2 {
+  position: absolute;
+  left: 92.5px;
+  /* (width of loading-content / 2) - (width of content__loader / 2) */
+  top: 0;
+  height: 100%;
+  width: 20px;
+  animation: spin 2000ms infinite cubic-bezier(0.69, 0.01, 0.05, 1);
+  animation-delay: 600ms;
+}
+.loading-content__loader--3 {
+  position: absolute;
+  left: 92.5px;
+  /* (width of loading-content / 2) - (width of content__loader / 2) */
+  top: 0;
+  height: 100%;
+  width: 20px;
+  animation: spin 2000ms infinite cubic-bezier(0.69, 0.01, 0.05, 1);
+  animation-delay: 900ms;
+}
+.loading-content__loader-content--1 {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: #9356DC;
+  box-shadow: 0 0 10px 1px #9356DC;
+}
+.loading-content__loader-content--2 {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: #FF79DA;
+  box-shadow: 0 0 10px 1px #FF79DA;
+}
+.loading-content__loader-content--3 {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: #99E2D0;
+  box-shadow: 0 0 10px 1px #99E2D0;
+}
+
+/* Spin endless */
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    z-index: -20;
+  }
+}
 .entete {
   position: relative;
   display: flex;
@@ -281,6 +403,8 @@ a {
 }
 
 .fonctionnement {
+  position: relative;
+  background-color: white;
   padding: 2rem 3%;
 }
 
