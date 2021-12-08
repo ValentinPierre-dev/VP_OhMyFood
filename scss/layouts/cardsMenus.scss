@@ -10,6 +10,15 @@
     @media screen and (min-width: map-get($breakpoints, desktop)){
         max-width: 32%;
     }
+
+    @for $i from 1 through 3{
+        &:nth-child(#{$i}){
+            animation: delay-pop 1000ms linear;
+            animation-delay: $i*300ms;
+            animation-fill-mode: both;
+        }
+    }
+
     &:hover > .cardMenu{
         width: 80%;
         border-radius: 1.5rem 0 0rem 1.5rem;
@@ -55,4 +64,14 @@
     font-size: map-get($size, big);
     color: white;
     transition: transform 1000ms ease;
+}
+
+@keyframes delay-pop{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
