@@ -390,6 +390,11 @@ a {
   animation-delay: 900ms;
   animation-fill-mode: both;
 }
+.cardMenu__global:nth-child(4) {
+  animation: delay-pop 1000ms linear;
+  animation-delay: 1200ms;
+  animation-fill-mode: both;
+}
 .cardMenu__global:hover > .cardMenu {
   width: 80%;
   border-radius: 1.5rem 0 0rem 1.5rem;
@@ -430,10 +435,15 @@ a {
   transform: translate(0, -50%) rotate(0deg);
   z-index: 23;
   top: 50%;
-  right: -50px;
+  right: -17%;
   font-size: 1.6rem;
   color: white;
   transition: transform 1000ms ease;
+}
+@media screen and (min-width: 599px) {
+  .check {
+    right: -15%;
+  }
 }
 
 @keyframes delay-pop {
@@ -563,6 +573,7 @@ a {
   .plats {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }

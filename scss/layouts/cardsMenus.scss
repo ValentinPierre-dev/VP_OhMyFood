@@ -11,7 +11,7 @@
         max-width: 32%;
     }
 
-    @for $i from 1 through 3{
+    @for $i from 1 through 4{
         &:nth-child(#{$i}){
             animation: delay-pop 1000ms linear;
             animation-delay: $i*300ms;
@@ -60,10 +60,13 @@
     transform: translate(0, -50%) rotate(0deg);
     z-index: 23;
     top: 50%;
-    right: -50px;
+    right: -17%;
     font-size: map-get($size, big);
     color: white;
     transition: transform 1000ms ease;
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        right: -15%;
+    }
 }
 
 @keyframes delay-pop{
