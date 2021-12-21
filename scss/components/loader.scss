@@ -45,7 +45,7 @@
     @for $i from 1 through $num-bars {
         &__loader--#{$i} {
             position: absolute;
-            left: 92.5px; /* (width of loading-content / 2) - (width of content__loader / 2) */
+            left: 92.5px;
             top: 0;
             height: 100%;
             width: 20px;
@@ -56,7 +56,7 @@
     }
     &__loader-content--1 {
         position: absolute;
-        height: 20px; // loading-content - loading-content__center-part
+        height: 20px;
         width: 100%;
         border-radius: 2rem;
         background-color: $color-primary;
@@ -64,7 +64,7 @@
       }
     &__loader-content--2 {
         position: absolute;
-        height: 20px; // loading-content - loading-content__center-part
+        height: 20px;
         width: 100%;
         border-radius: 2rem;
         background-color: $color-secondary;
@@ -72,7 +72,7 @@
     }
     &__loader-content--3 {
         position: absolute;
-        height: 20px; // loading-content - loading-content__center-part
+        height: 20px;
         width: 100%;
         border-radius: 2rem;
         background-color: $color-tiertiary;
